@@ -11,7 +11,7 @@
         [(checked)] = "todoItem.completed"
         (change)="toggleComplete(i)"
         />
-        <span [class.compoted] = todoItem.completed>{{todoItem.task}}</span>
+        <span [class.completed] = todoItem.completed>{{todoItem.task}}</span>
         <button (click)="deleteTask(todoItem.id)">Delete</button>
     </li>
   </ul>
